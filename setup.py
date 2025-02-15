@@ -16,10 +16,12 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name='course_recommender',
+    name='LearnSphere',
     version='0.0.1',
-    author='Neha',
-    author_email='your_email@example.com',
+    description='Real-time course recommendations using NLP and ML',
+    author='Bhavya, Neha, Agamjot and Dhruv',
+    author_email='bhavyajha1404@gmail.com',
     packages=find_packages(),
-    install_requires=get_requirements('requirements.txt')
+    install_requires=get_requirements('requirements.txt'),
+    include_package_data=True,
 )
